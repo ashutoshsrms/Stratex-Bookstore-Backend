@@ -34,59 +34,75 @@ This project implements a backend system for user and seller registration, book 
 ### Installation
 
 1. Clone the repository:
+
    ```sh
    git clone https://github.com/ashutoshsrms/Stratex-Bookstore-Backend
    cd Stratex-Bookstore-Backend
 
+   ```
+
 2. Install the dependencies:
-     ```sh
-    npm install
+
+   ```sh
+   npm install
+
+   ```
 
 3. Create a .env file in the root directory and add the following:
-     ```sh
-    MONGO_URI=your_mongodb_connection_string
-    JWT_SECRET=your_jwt_secret
+
+   ```sh
+   MONGO_URI=your_mongodb_connection_string
+   JWT_SECRET=your_jwt_secret
+
+   ```
 
 4. Build the project:
-    ```sh 
-    npm run build
+
+   ```sh
+   npm run build
+
+   ```
 
 5. Start the server:
-    ```sh
-    npm start
+
+   ```sh
+   npm start
+
+   ```
 
 6. Running in Development Mode
-    To run the server in development mode with automatic restarts on file changes, use:
-    ```sh
-    npm run dev
+   To run the server in development mode with automatic restarts on file changes, use:
+   ```sh
+   npm run dev
+   ```
 
 ## API Endpoints
 
 ## Authentication
+
     - Register: POST /api/auth/register
 
     - Login: POST /api/auth/login
 
 ## Books
 
-   - Upload Books (Seller only): POST /api/books/upload
-        - Upload a CSV file containing book details.
-    
-    - Get All Books: GET /api/books
-        - Retrieve a list of all books in the database.
-    
-    - Get Book by ID: GET /api/books/:id
-        - Retrieve details of a specific book by ID.
-    
-    - Update Book (Seller only): PUT /api/books/:id
-        - Update details of a specific book by ID (only if the book belongs to the seller).
+- Upload Books (Seller only): POST /api/books/upload
 
-    - Delete Book (Seller only): DELETE /api/books/:id
-        - Delete a specific book by ID (only if the book belongs to the seller).
+  - Upload a CSV file containing book details.
 
+- Get All Books: GET /api/books
+  - Retrieve a list of all books in the database.
+- Get Book by ID: GET /api/books/:id
+  - Retrieve details of a specific book by ID.
+- Update Book (Seller only): PUT /api/books/:id
 
+  - Update details of a specific book by ID (only if the book belongs to the seller).
+
+- Delete Book (Seller only): DELETE /api/books/:id
+  - Delete a specific book by ID (only if the book belongs to the seller).
 
 ## Contributing
+
 - Fork the repository.
 - Create a new branch (git checkout -b feature-branch).
 - Make your changes.
