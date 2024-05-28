@@ -70,7 +70,7 @@ This project implements a backend system for user and seller registration, book 
 ## Books
 
    - Upload Books (Seller only): POST /api/books/upload
-        -Upload a CSV file containing book details.
+        - Upload a CSV file containing book details.
     
     - Get All Books: GET /api/books
         - Retrieve a list of all books in the database.
